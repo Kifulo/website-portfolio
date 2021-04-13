@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WebDisign - Portfolio</title>
+</head>
+<body>
+
+     <div class="container">
+
+         <div class="navbar">
+             <div class="logo">
+                 <img src="imagens/logo2.jpg"  width="600">
+             </div>
+             <nav>
+                 <ul>
+                     <li><a href="index.html">Sobre Mim</a></li>
+                     <li><a href="trabalho.html">Meus Trabalhos</a></li>
+                     <li><a href="skill.html">Skills</a></li>
+                     <li><a href="contato.html">Contacto</a></li>
+                 </ul>
+             </nav>
+             <div class="user">
+                 <p>Adilson Baptista Kifulo</p>
+                 <img src="imagens/IMG_20190513_155947.jpg" width="100" height="30">
+             </div>
+         </div>
+
+         <div class="sidebar">
+             <img src="imagens/search.png" class="search-icon">
+             <div class="social-links">
+                <a href="#"><img src="imagens/fb.png"></a>
+                 <a href="#"><img src="imagens/ig.png"></a>
+                 <a href="#"><img src="imagens/tw.png"></a>
+             </div>
+             <img src="imagens/info.png" class="info-icon">
+
+         </div>
+
+         <div class="msg-container">
+             <div id="slaider">
+                 <div class="msg-col">
+                     <h1>Sobre Mim</h1>
+                     <p>Sou Formado em Gestao Financeira na Universidade Anhangueira,ano 2018 hoje minha paixão esta na programação,hoje faço varios cursos de programação e Projetos com o  front e back.<br></p>     
+                    </p>
+
+                     <a href="trabalho.html">Works</a>
+                    
+                         
+                 </div>
+             </div>
+
+         </div>
+
+         <div class="controller">
+             <div id="line1"></div>
+             <div id="line2"></div>
+             <div id="line3"></div>
+             <div id="line4"></div>
+             <div id="active"></div>
+         </div>
+
+     </div>
+
+
+     <script>
+
+         var slaider = document.getElementById('slaider');
+         var active = document.getElementById('active');
+         var line1 = document.getElementById('line1');
+         var line2 = document.getElementById('line2');
+         var line3 = document.getElementById('line3');
+         var line4 = document.getElementById('line4');
+
+         line1.onclick = function (){
+             slaider.style.transform = 'translateX(0)';
+             active.style.top = '0px';
+
+         }
+
+
+         line2.onclick = function (){
+             slaider.style.transform = 'translateX(-25%)';
+             active.style.top = '80px';
+         }
+
+
+         line3.onclick = function (){
+             slaider.style.transform = 'translateX(-50%)';
+             active.style.top = '160px';
+         }
+
+         line4.onclick = function (){
+             slaider.style.transform = 'translateX(-75%)';
+             active.style.top = '240px';
+         }
+
+
+     </script>
+
+     
+    
+</body>
+</html>
